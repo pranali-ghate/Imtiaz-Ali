@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/browserimg.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        //js for slide
+        var myCarousel = document.querySelector('#myCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2000,
+            wrap: false
+        })
+
+        //js for song
+        var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+        triggerTabList.forEach(function (triggerEl) {
+            var tabTrigger = new bootstrap.Tab(triggerEl)
+
+            triggerEl.addEventListener('click', function (event) {
+                event.preventDefault()
+                tabTrigger.show()
+            })
+        })
+    </script>
+    <title>Imtiaz Ali</title>
+</head>
+
+<body>
+    <div id="navigation">
+        <p style="font-size: 150%;">Imtiaz Ali</p>
+        <ul id="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#posters">Posters</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#songs">Songs</a></li>
+            <li><a href="#trailer">Trailer</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
+        </ul>
+    </div>
+    <div class="row col-12" style="padding-top: 100px;" id="home">
+        <div class="col-6">
+            <div class="card m-5">
+                <h3 class="card-title text-center mt-3 text-decoration-underline" style="color: #d64040">IMTIAZ ALI</h3>
+                <p class="card-text m-4">Imtiaz Ali is an Indian film director, actor and writer. In 2005, he made his
+                    directorial debut with the
+                    film Socha Na Tha. However, it was his second film Jab We Met (2007) that brought him success and
+                    fame.
+                    His 2009 film Love Aaj Kal gained much critical success, and was declared a super hit at the box
+                    office.
+                    His movie Rockstar (2011) was also a commercial and critical success. Imtiaz Ali had his origins in
+                    Jamshedpur, Jharkhand.He was brought up in Patna and Jamshedpur. He had his early education in
+                    Patna-
+                    D.B.M.S. English school, Jamshedpur,and later attended University of Delhi in Delhi, where he took
+                    part
+                    in college theater. He started Ibtida the dramatic society of Hindu College. Thereafter he moved to
+                    Mumbai and did a diploma course from Xavier Institute of Communication.</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card m-4" style="border: 0px;">
+                <img src="img/Imtiaz.jpg" alt="Imtiaz Ali">
+            </div>
+        </div>
+    </div>
+    <div>
+        <p id="posters">POSTERS</p>
+    </div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <center>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/Jab We Met.jpg" class="d-block w-100" alt="Jab We Met">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/love aaj kal.jpg" class="d-block w-100" alt="love aaj kal">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Rockstar.png" class="d-block w-100" alt="Rockstar">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Tamasha.png" class="d-block w-100" alt="Tamasha">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Laila Majnu.jpg" class="d-block w-100" alt="Laila Majnu">
+                </div>
+            </div>
+        </center>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div>
+        <p id="overview">Overview</p>
+    </div>
+    <div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/Jab We Met 2.jpg" class="img-fluid" alt="Jab We Met"
+                        style="margin:45% 0% 0% 10%; box-shadow: 0px 0px 2px 2px rgba(155, 153, 153, 0.582);">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #d64040; text-align: center; font-weight: bold">Jab We Met
+                        </h5>
+                        <p style="color: #d64040; text-align: center;">Comedy &nbsp; Drama &nbsp; Romance</p>
+                        <center>
+                            <table class="card-text" cellpadding="7">
+                                <tbody>
+                                    <tr>
+                                        <th>Directed by</th>
+                                        <td>Imtiaz Ali</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Written by</th>
+                                        <td>Imtiaz Ali</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Produced by</th>
+                                        <td>Dhilin Mehta</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Stars</th>
+                                        <td>Shahid Kapoor <br>Kareena Kapoor</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Release date</th>
+                                        <td>25 October 2007</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Running time</th>
+                                        <td>142 minutes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                        <p style="margin-left: 5%;">A depressed wealthy businessman finds his life changing after he
+                            meets a
+                            spunky and care-free young woman.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="card mb-3" style="margin-left: 53%;">
+        <div class="row g-0">
+            <div class="col-md-8" style="width: 63%">
+                <div class="card-body" style="margin-right: 2%;">
+                    <h5 class="card-title" style="color: #d64040; text-align: center; font-weight: bold">Love Aaj Kal
+                    </h5>
+                    <p style="color: #d64040; text-align: center;">Comedy &nbsp; Drama &nbsp; Romance</p>
+                    <center>
+                        <table class="card-text" cellpadding="7">
+                            <tbody>
+                                <tr>
+                                    <th>Directed by</th>
+                                    <td>Imtiaz Ali</td>
+                                </tr>
+                                <tr>
+                                    <th>Written by</th>
+                                    <td>Imtiaz Ali</td>
+                                </tr>
+                                <tr>
+                                    <th>Produced by</th>
+                                    <td>Saif Ali Khan <br>Dinesh Vijan</td>
+                                </tr>
+                                <tr>
+                                    <th>Stars</th>
+                                    <td>Saif Ali Khan <br>Deepika Padukone</td>
+                                </tr>
+                                <tr>
+                                    <th>Release date</th>
+                                    <td>31 July 2009</td>
+                                </tr>
+                                <tr>
+                                    <th>Running time</th>
+                                    <td>129 minutes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                    <p style="margin-left: 1%;">An old-fashioned romantic tells his personal love story to a modern man
+                        who has just broken up with his girlfriend. Has love really ever changed?</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/Love Aaj Kal 2.webp" class="img-fluid" alt="love aaj kal"
+                    style="margin:45% 10% 0% 0%; box-shadow: 0px 0px 2px 2px rgba(155, 153, 153, 0.582);">
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="img/Rockstar 2.jpg" class="img-fluid" alt="Rockstar"
+                    style="margin:45% 0% 0% 10%; box-shadow: 0px 0px 2px 2px rgba(155, 153, 153, 0.582);">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #d64040; text-align: center; font-weight: bold">Rockstar</h5>
+                    <p style="color: #d64040; text-align: center;">Music &nbsp; Drama &nbsp; Romance</p>
+                    <center>
+                        <table class="card-text" cellpadding="7">
+                            <tbody>
+                                <tr>
+                                    <th>Directed by</th>
+                                    <td>Imtiaz Ali</td>
+                                </tr>
+                                <tr>
+                                    <th>Written by</th>
+                                    <td>Imtiaz Ali</td>
+                                </tr>
+                                <tr>
+                                    <th>Produced by</th>
+                                    <td>Sunil Lulla <br> Dhilin Mehta</td>
+                                </tr>
+                                <tr>
+                                    <th>Stars</th>
+                                    <td>Ranbir Kapoor <br> Nargis Fakhri</td>
+                                </tr>
+                                <tr>
+                                    <th>Release date</th>
+                                    <td>11 November 2011</td>
+                                </tr>
+                                <tr>
+                                    <th>Running time</th>
+                                    <td>159 minutes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                    <p style="margin-left: 5%;">Janardhan Jakhar chases his dreams of becoming a big Rock star,
+                        during which he falls in love with Heer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3" style="margin-left: 53%;">
+        <div class="row g-0">
+            <div class="col-md-8" style="width: 63%">
+                <div class="card-body" style="margin-right: 2%;">
+                    <h5 class="card-title" style="color: #d64040; text-align: center; font-weight: bold">Tamasha</h5>
+                    <p style="color: #d64040; text-align: center;">Comedy &nbsp; Drama &nbsp; Romance</p>
+                    <center>
+                        <table class="card-text" cellpadding="7">
+                            <tbody>
+                                <tr>
+                                    <th>Directed by</th>
+                                    <td>Imtiaz Ali</td>
+                                </tr>
+                                <tr>
+                                    <th>Written by</th>
+                                    <td>Imtiaz Ali</td>
+                                </tr>
+                                <tr>
+                                    <th>Produced by</th>
+                                    <td>Sajid Nadiadwala</td>
+                                </tr>
+                                <tr>
+                                    <th>Stars</th>
+                                    <td>Ranbir Kapoor <br>Deepika Padukone</td>
+                                </tr>
+                                <tr>
+                                    <th>Release date</th>
+                                    <td>27 November 2015</td>
+                                </tr>
+                                <tr>
+                                    <th>Running time</th>
+                                    <td>139 minutes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                    <p style="margin-left: 1%;">A boy meets a girl, in Corsica. They decide not to reveal their real
+                        name or personality.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/Tamasha 2.jpg" class="img-fluid" alt="Tamasha"
+                    style="margin:45% 10% 0% 0%; box-shadow: 0px 0px 2px 2px rgba(155, 153, 153, 0.582);">
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="img/Laila Majnu 2.jpg" class="img-fluid" alt="Laila Majnu"
+                    style="margin:45% 0% 0% 10%; box-shadow: 0px 0px 2px 2px rgba(155, 153, 153, 0.582);">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #d64040; text-align: center; font-weight: bold">Laila Majnu
+                    </h5>
+                    <p style="color: #d64040; text-align: center;">Drama &nbsp; Romance</p>
+                    <center>
+                        <table class="card-text" cellpadding="7">
+                            <tbody>
+                                <tr>
+                                    <th>Directed by</th>
+                                    <td>Sajid Ali</td>
+                                </tr>
+                                <tr>
+                                    <th>Written by</th>
+                                    <td>Imtiaz Ali <br> Sajid Ali</td>
+                                </tr>
+                                <tr>
+                                    <th>Produced by</th>
+                                    <td>Ekta Kapoor <br> Shobha Kapoor </td>
+                                </tr>
+                                <tr>
+                                    <th>Stars</th>
+                                    <td>Avinash Tiwary <br>Tripti Dimri</td>
+                                </tr>
+                                <tr>
+                                    <th>Release date</th>
+                                    <td>7 September 2018</td>
+                                </tr>
+                                <tr>
+                                    <th>Running time</th>
+                                    <td>140 minutes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                    <p style="margin-left: 5%;">The story is Laila Majnu have problems relevant to the youth of
+                        today. While dealing with their feuding families a passionate love story unravels.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p id="songs">SONGS</p>
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+        <div class="col-3 text-center mt-5">
+            <div class="list-group list-group-flush" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action list-group-item-danger active" id="list-JabWeMet-list"
+                    data-bs-toggle="list" href="#list-JabWeMet" role="tab" aria-controls="list-JabWeMet">Jab We Met</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" id="list-LoveAajkal-list"
+                    data-bs-toggle="list" href="#list-LoveAajkal" role="tab" aria-controls="list-LoveAajkal">Love Aaj
+                    kal</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" id="list-Rockstar-list"
+                    data-bs-toggle="list" href="#list-Rockstar" role="tab" aria-controls="list-Rockstar">Rockstar</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" id="list-Tamasha-list"
+                    data-bs-toggle="list" href="#list-Tamasha" role="tab" aria-controls="list-Tamasha">Tamasha</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" id="list-LailaMajnu-list"
+                    data-bs-toggle="list" href="#list-LailaMajnu" role="tab" aria-controls="list-LailaMajnu">Laila
+                    Majnu</a>
+            </div>
+        </div>
+        <div class="mt-5">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-JabWeMet" role="tabpanel"
+                    aria-labelledby="list-JabWeMet-list">
+                    <ul id="songlist">
+                        <li><audio src="songs/Jab We Met/Aao Milo Chalo.mp3" controls></audio>Aao Milo Chalo</li>
+                        <li><audio src="songs/Jab We Met/Aaoge Jab Tum.mp3" controls></audio>Aaoge Jab Tum</li>
+                        <li><audio src="songs/Jab We Met/Mauja Hi Mauja.mp3" controls></audio>Mauja Hi Mauja</li>
+                        <li><audio src="songs/Jab We Met/Nagada Nagada.mp3" controls></audio>Nagada Nagada</li>
+                        <li><audio src="songs/Jab We Met/Tum Se Hi.mp3" controls></audio>Tum Se Hi</li>
+                        <li><audio src="songs/Jab We Met/Yeh Ishq Hai.mp3" controls></audio>Yeh Ishq Hai</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="list-LoveAajkal" role="tabpanel" aria-labelledby="list-LoveAajkal-list">
+                    <ul id="songlist">
+                        <li><audio src="songs/Love Aaj Kal/Aahun Aahun.mp3" controls></audio>Aahun Aahun</li>
+                        <li><audio src="songs/Love Aaj Kal/Ajj Din Chadheya.mp3" controls></audio>Ajj Din Chadheya</li>
+                        <li><audio src="songs/Love Aaj Kal/Chor Bazaari.mp3" controls></audio>Chor Bazaari</li>
+                        <li><audio src="songs/Love Aaj Kal/Dooriyan.mp3" controls></audio>Dooriyan</li>
+                        <li><audio src="songs/Love Aaj Kal/Main Kya Hoon.mp3" controls></audio>Main Kya Hoon</li>
+                        <li><audio src="songs/Love Aaj Kal/Twist.mp3" controls></audio>Twist</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="list-Rockstar" role="tabpanel" aria-labelledby="list-Rockstar-list">
+                    <ul id="songlist">
+                        <li><audio src="songs/Rockstar/Aur Ho.mp3" controls></audio>Aur Ho</li>
+                        <li><audio src="songs/Rockstar/Haawa Haawa.mp3" controls></audio>Haawa Haawa</li>
+                        <li><audio src="songs/Rockstar/Jo Bhi Main.mp3" controls></audio>Jo Bhi Main</li>
+                        <li><audio src="songs/Rockstar/Katiya Karun.mp3" controls></audio>Katiya Karun</li>
+                        <li><audio src="songs/Rockstar/Kun Faya Kun.mp3" controls></audio>Kun Faya Kun</li>
+                        <li><audio src="songs/Rockstar/Naadaan Parindey.mp3" controls></audio>Naadaan Parindey</li>
+                        <li><audio src="songs/Rockstar/Phir Se Ud Chala.mp3" controls></audio>Phir Se Ud Chala</li>
+                        <li><audio src="songs/Rockstar/Saadda Haq.mp3" controls></audio>Saadda Haq</li>
+                        <li><audio src="songs/Rockstar/Sheher Mein.mp3" controls></audio>Sheher Mein</li>
+                        <li><audio src="songs/Rockstar/Tum Ho.mp3" controls></audio>Tum Ho</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="list-Tamasha" role="tabpanel" aria-labelledby="list-Tamasha-list">
+                    <ul id="songlist">
+                        <li><audio src="songs/Tamasha/Agar Tum Saath Ho.mp3" controls></audio>Agar Tum Saath Ho</li>
+                        <li><audio src="songs/Tamasha/Chali Kahani.mp3" controls></audio>Chali Kahani</li>
+                        <li><audio src="songs/Tamasha/Heer Toh Badi Sad Hai.mp3" controls></audio>Heer Toh Badi Sad Hai
+                        </li>
+                        <li><audio src="songs/Tamasha/Matargashti.mp3" controls></audio>Matargashti</li>
+                        <li><audio src="songs/Tamasha/Safarnama.mp3" controls></audio>Safarnama</li>
+                        <li><audio src="songs/Tamasha/Tu Koi Aur Hai.mp3" controls></audio>Tu Koi Aur Hai</li>
+                        <li><audio src="songs/Tamasha/Wat Wat Wat.mp3" controls></audio>Wat Wat Wat</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="list-LailaMajnu" role="tabpanel" aria-labelledby="list-LailaMajnu-list">
+                    <ul id="songlist">
+                        <li><audio src="songs/Laila Majnu/Aahista.mp3" controls></audio>Aahista</li>
+                        <li><audio src="songs/Laila Majnu/Gayee Kaam Se.mp3" controls></audio>Gayee Kaam Se</li>
+                        <li><audio src="songs/Laila Majnu/Hafiz Hafiz.mp3" controls></audio>Hafiz Hafiz</li>
+                        <li><audio src="songs/Laila Majnu/Katyu Chuko.mp3" controls></audio>Katyu Chuko</li>
+                        <li><audio src="songs/Laila Majnu/Lala Zula Zalio.mp3" controls></audio>Lala Zula Zalio</li>
+                        <li><audio src="songs/Laila Majnu/Omeri Laila.mp3" controls></audio>Omeri Laila</li>
+                        <li><audio src="songs/Laila Majnu/Sarphiri.mp3" controls></audio>Sarphiri</li>
+                        <li><audio src="songs/Laila Majnu/Tum.mp3" controls></audio>Tum</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p id="trailer">TRAILER</p>
+    </div>
+    <center>
+        <!-- use js from jspractice -->
+        <nav class="container-2">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-jabwemet-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-jabwemet" type="button" role="tab" aria-controls="nav-jabwemet"
+                    aria-selected="true">Jab We Met</button>
+                <button class="nav-link" id="nav-loveaajkal-tab" data-bs-toggle="tab" data-bs-target="#nav-loveaajkal"
+                    type="button" role="tab" aria-controls="nav-loveaajkal" aria-selected="false">Love Aaj Kal</button>
+                <button class="nav-link" id="nav-rockstart-tab" data-bs-toggle="tab" data-bs-target="#nav-rockstart"
+                    type="button" role="tab" aria-controls="nav-rockstart" aria-selected="false">Rockstar</button>
+                <button class="nav-link" id="nav-tamasha-tab" data-bs-toggle="tab" data-bs-target="#nav-tamasha"
+                    type="button" role="tab" aria-controls="nav-tamasha" aria-selected="false">Tamasha</button>
+                <button class="nav-link" id="nav-lailamajnu-tab" data-bs-toggle="tab" data-bs-target="#nav-lailamajnu"
+                    type="button" role="tab" aria-controls="nav-lailamajnu" aria-selected="false">Laila Majnu</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active ms-2 me-2" id="nav-jabwemet" role="tabpanel"
+                aria-labelledby="nav-jabwemet-tab" tabindex="0">
+                <video width="1350" height="500" controls>
+                    <source src="./Video/Jab We Met.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="tab-pane fade ms-2 me-2" id="nav-loveaajkal" role="tabpanel"
+                aria-labelledby="nav-loveaajkal-tab" tabindex="0">
+                <video width="1350" height="500" controls>
+                    <source src="./Video/Love Aaj Kal.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="tab-pane fade ms-2 me-2" id="nav-rockstart" role="tabpanel" aria-labelledby="nav-rockstart-tab"
+                tabindex="0">
+                <video width="1350" height="500" controls>
+                    <source src="./Video/Rockstar.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="tab-pane fade ms-2 me-2" id="nav-tamasha" role="tabpanel" aria-labelledby="nav-tamasha-tab"
+                tabindex="0">
+                <video width="1350" height="500" controls>
+                    <source src="./Video/Tamasha.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="tab-pane fade ms-2  me-2" id="nav-lailamajnu" role="tabpanel"
+                aria-labelledby="nav-lailamajnu-tab" tabindex="0">
+                <video width="1350" height="500" controls>
+                    <source src="./Video/Laila Majnu.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </center>
+    <!-- <div>
+        <p id="about">ABOUT</p>
+    </div> -->
+    <div class="footer">
+        <div class="footer_section">
+            <div class="footer_title">
+                <p style="font-size: 150%;">Imtiaz Ali</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#posters">Posters</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#songs">Songs</a></li>
+                    <li><a href="#trailer">Trailer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+        <p>&copy; copyright 2024</p>
+    </div>
+    </div>
+</body>
+
+</html>

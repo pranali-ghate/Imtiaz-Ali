@@ -1,0 +1,201 @@
+body{
+    margin: 0%;
+}
+
+#navigation{
+    display: flex;
+    background-color: #d64040;
+    color: #ffffff;
+    padding-left: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+#navigation p{
+    text-transform: uppercase;
+    margin-top: 15px;
+    align-content: center;
+}
+
+#nav{
+    display: flex;
+}
+
+#nav li{
+    padding: 5%;
+    list-style: none;
+    margin-top: 4%;
+}
+
+#nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#nav  :hover{
+    background-color: #b83a3a;
+}
+
+#posters{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    padding: 1.5% 0% 1.5% 0%;
+    margin-left: 2%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #d64040;
+    width: 10%;
+    border-radius: 100px;
+}
+
+ .carousel{
+    height: 580px;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 2%;
+    outline: 8px double #d64040;
+}
+
+.carousel-inner .carousel-item img{
+    width: 400px !important;
+    height: 500px;
+    box-shadow: 0px 0px 10px 10px #d64040;
+    margin: 3% 0% 3% 0%;
+}
+
+#overview{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    padding: 1.5% 0% 1.5% 0%;
+    margin-left: 2%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #d64040;
+    width: 10%;
+    border-radius: 100px;
+}
+
+.card, .mb-3{
+    max-width: 600px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 4px 4px 10px 5px #d64040;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.card-text th{
+    text-align: right;
+}
+
+.card-text td{
+    text-align: left;
+}
+
+#songs{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    padding: 1.5% 0% 1.5% 0%;
+    margin-left: 2%;
+    margin-top: 2%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #d64040;
+    width: 10%;
+    border-radius: 100px;
+}
+
+#songlist{
+    list-style-type: none;
+}
+
+.list-group a{
+    height: 70px;
+}
+
+.d-flex{
+    margin: 3% 10% 3% 10%;
+    box-shadow: 4px 4px 10px 5px #d64040;
+    background-image: linear-gradient(to bottom right, #d64040 -20%, #ffffff 90%);
+    background-repeat: no-repeat;
+}
+
+#trailer{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    padding: 1.5% 0% 1.5% 0%;
+    margin-left: 2%;
+    margin-top: 2%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #d64040;
+    width: 10%;
+    border-radius: 100px;
+}
+
+.container-2 .nav{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #d64040;
+    width: 1350px;
+    height: 50px;
+}
+
+.container-2 .nav button{
+    color: #ffffff;
+    margin: 0px 63px 0px 63px;
+    font-size: 120%;
+    border-radius: 0px;
+}
+
+#about{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    padding: 1.5% 0% 1.5% 0%;
+    margin-left: 2%;
+    margin-top: 2%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #d64040;
+    width: 10%;
+    border-radius: 100px;
+}
+
+.footer{
+    height: 250px;
+    margin-top: 20px;
+    background-color: #d64040;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer_section{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_section ul li{
+    list-style: none;
+    margin: 15px;
+}
+
+.footer_section ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_section ul li a:hover{
+    background-color: #b83a3a;
+}
+
+.footer_title{
+    align-content: center;
+    font-size: 150%;
+}
+
+.footer div p{
+    margin: 0px;
+    text-align: center;
+}
